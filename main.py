@@ -130,6 +130,7 @@ summary_op = tf.summary.merge_all()
 
 # Init operation
 init_op = tf.global_variables_initializer()
+init_lc = tf.local_variables_initializer()
 
 #################################
 # Train! (summary, init, etc.)
@@ -141,6 +142,7 @@ saver = tf.train.Saver(max_to_keep = 5)
 # Queue ,Threads and Summary Writer
 sess = tf.Session()
 sess.run([init_op])
+sess.run([init_lc])
 
 # if model exist, restore
 """
