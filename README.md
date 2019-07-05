@@ -4,6 +4,7 @@ Reimplementation of [cycle-gan](https://arxiv.org/pdf/1703.10593.pdf) with [impr
 
 ## Prerequisites
 
+- Python v2.7
 - Tensorflow v1.0
 
 ## Training Result
